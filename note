@@ -1,0 +1,49 @@
+styledcomponents
+recoil
+react router
+framer motion
+react query
+react hook form
+
+BrowerRouter, routes, route recoil, theme >> 초기세팅하기
+
+====
+
+
+useanimation > 동시에 7개의 애니메ㄴ이션 효과를구현해야하는 상황이 발생할 때 쓰는 훅
+>>여러개의 애니메이션ㅇ르 동시에 처리할 수 있ㄷ록 해주는 
+
+
+========
+useScroll from framermotion
+>> 스크롤에 따라 뭘 주는거
+
+useeffect >> 스크롤값이 변화하면 콜백해. 뭘? usescroll을 ~
+
+======
+tmdb 데이터가져오기
+
+index.tsx
+react query setting
+import { QueryClient,QueryClientProvider } from "react-query";
+
+
+api.ts >> api key저장
+
+  <RecoilRoot>
+    <QueryClientProvider client={client}>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <App />
+      </ThemeProvider>
+    </QueryClientProvider>
+  </RecoilRoot>
+
+     --url 'https://api.themoviedb.org/3/movie/now_playing?API_KEY?=${}?language=en-US&page=1' \
+
+======
+
+외부에서 받아온 데이터에 대한 타입정의가 필요하다
+
+
+

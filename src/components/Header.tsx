@@ -148,9 +148,6 @@ const Header = () => {
           <Item>
             <Link to="/">Home{homeMatch && <Circle />}</Link>
           </Item>
-          <Item>
-            <Link to="/tv">TV Shows{tvMatch && <Circle />}</Link>
-          </Item>
         </Items>
       </Col>
       <Col>
